@@ -1,27 +1,7 @@
-a = float(input('Введите первое число: '))
-action = str(input('Выберите арифметическое действие (+ - * /): '))
-b = float(input('Введите второе число: '))
-if action == '+':
-    result = (a+b)
-    if result % 1 == 0:
-        print(int(result))
-    else:
-        print(float(result))
-elif action == '-':
-    result = (a-b)
-    if result % 1 == 0:
-        print(int(result))
-    else:
-        print(float(result))
-elif action == '*':
-    result = (a*b)
-    if result % 1 == 0:
-        print(int(result))
-    else:
-        print(float(result))
-elif action == '/':
-    result = (a/b)
-    if result % 1 == 0:
-        print(int(result))
-    else:
-        print(float(result))
+operation = input('write the operation here: ') # writes the operation here , example 10 x 2 ÷ 2
+if 'x' in operation: # change all x for *
+    operation =  operation.replace('x','*')
+if '÷' in operation: # change all  ÷  for /
+    operation =operation.replace('÷','/')
+print(eval(operation)) #print the operation 
+
