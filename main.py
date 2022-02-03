@@ -1,11 +1,27 @@
-a = int(input('Введите первое целое число: '))
+a = float(input('Введите первое число: '))
 action = str(input('Выберите арифметическое действие (+ - * /): '))
-b = int(input('Введите второе целое число: '))
+b = float(input('Введите второе число: '))
 if action == '+':
-    print(a+b)
+    result = (a+b)
+    if result % 1 == 0:
+        print(int(result))
+    else:
+        print(float(result))
 elif action == '-':
-    print(a-b)
+    result = (a-b)
+    if result % 1 == 0:
+        print(int(result))
+    else:
+        print(float(result))
 elif action == '*':
-    print(a*b)
+    result = (a*b)
+    if result % 1 == 0:
+        print(int(result))
+    else:
+        print(float(result))
 elif action == '/':
-    print(a/b)
+    result = (a/b)
+    if result % 1 == 0:
+        print(int(result))
+    else:
+        print(float(result))
